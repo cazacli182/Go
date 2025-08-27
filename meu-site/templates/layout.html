@@ -1,0 +1,23 @@
+{{define "layout"}}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{{.Titulo}}</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Site em Go</h1>
+        <nav><a href="/">Início</a></nav>
+    </header>
+
+    <main>
+        {{template "conteudo" .}}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
+{{end}}
